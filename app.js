@@ -17,7 +17,6 @@ app.post("/welcome", auth, (req, res) => {
     res.status(200).send("Welcome 🙌 ");
 });
 
-
 app.post("/register", async (req, res) => {
 
     // Our register logic starts here
@@ -103,6 +102,27 @@ app.post("/login", async (req, res) => {
         console.log(err);
     }
     // Our register logic ends here
+})
+
+app.post("/getPlayersTable", async (req, res) => {
+
+    // Our login logic starts here
+    try {
+        const { loginUser } = req.body;
+
+        if (!loginUser) {
+            res.status(400).send("User is required");
+        } else {
+            const user = await User.findOne({ loginUser });
+
+        }
+
+        res.status(400).send("Invalid Credentials");
+    } catch (err) {
+        console.log(err);
+    }
+    // Our register logic ends here
 });
+
 
 module.exports = app;
