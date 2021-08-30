@@ -22,7 +22,7 @@ app.post("/register", async (req, res) => {
     // Our register logic starts here
     try {
         // Get user input
-        const { first_name, last_name, email, password } = req.body;
+        const {first_name, last_name, email, password} = req.body;
 
         // Validate user input
         if (!(email && password && first_name && last_name)) {
@@ -31,14 +31,14 @@ app.post("/register", async (req, res) => {
 
         // check if user already exist
         // Validate if user exist in our database
-        const oldUser = await User.findOne({ email });
+        const oldUser = await User.findOne({email});
 
         if (oldUser) {
             return res.status(409).send("User Already Exist. Please Login");
         }
 
         //Encrypt user password
-       const encryptedPassword = await bcrypt.hash(password, 10);
+        const encryptedPassword = await bcrypt.hash(password, 10);
 
         // Create user in our database
         const user = await User.create({
@@ -50,7 +50,7 @@ app.post("/register", async (req, res) => {
 
         // Create token
         const token = jwt.sign(
-            { user_id: user._id, email },
+            {user_id: user._id, email},
             process.env.TOKEN_KEY,
             {
                 expiresIn: "2h",
@@ -72,19 +72,19 @@ app.post("/login", async (req, res) => {
     // Our login logic starts here
     try {
         // Get user input
-        const { email, password } = req.body;
+        const {email, password} = req.body;
 
         // Validate user input
         if (!(email && password)) {
             res.status(400).send("All input is required");
         }
         // Validate if user exist in our database
-        const user = await User.findOne({ email });
+        const user = await User.findOne({email});
 
         if (user && (await bcrypt.compare(password, user.password))) {
             // Create token
             const token = jwt.sign(
-                { user_id: user._id, email },
+                {user_id: user._id, email},
                 process.env.TOKEN_KEY,
                 {
                     expiresIn: "2h",
@@ -106,22 +106,18 @@ app.post("/login", async (req, res) => {
 
 app.post("/getPlayersTable", async (req, res) => {
 
-    // Our login logic starts here
     try {
-        const { loginUser } = req.body;
-
-        if (!loginUser) {
-            res.status(400).send("User is required");
-        } else {
-            const user = await User.findOne({ loginUser });
-
+        const userObj = req.body;
+        const email = userObj.email
+        const userValid = await User.findOne({email});
+        if(userValid != null){
+            const users = await User.find()
+            res.status(200).json(users)
         }
 
-        res.status(400).send("Invalid Credentials");
-    } catch (err) {
+         } catch (err) {
         console.log(err);
-    }
-    // Our register logic ends here
+     }
 });
 
 
