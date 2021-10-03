@@ -68,6 +68,7 @@ app.post("/register", async (req, res) => {
 });
 
 app.post("/login", async (req, res) => {
+    debugger
 
     // Our login logic starts here
     try {
