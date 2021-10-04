@@ -4,6 +4,7 @@ const express = require("express");
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const cors = require('cors')
+const axios = require('axios')
 
 const app = express();
 app.use(cors())
@@ -98,7 +99,7 @@ app.post("/login", async (req, res) => {
             // user
             res.status(200).json(user);
         }
-        res.status(400).send("Invalid Credentials");
+        res.status(400).json("Invalid Credentials");
     } catch (err) {
         console.log(err);
     }
@@ -121,5 +122,9 @@ app.post("/getPlayersTable", async (req, res) => {
      }
 });
 
+app.post('/setPokemon', async (req, res) => {
+    console.log(req.body)
+
+})
 
 module.exports = app;
