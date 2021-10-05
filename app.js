@@ -124,7 +124,17 @@ app.post("/getPlayersTable", async (req, res) => {
 
 app.post('/setPokemon', async (req, res) => {
     console.log(req.body)
+    const mid = req.body.mid
+    const pokeMaster = await User.findById(mid)
+    if (pokeMaster == null) {
+        return res.status(404).json({ message: 'Cannot find subscriber' })
+    } else {
+
+    }
 
 })
 
 module.exports = app;
+
+
+
