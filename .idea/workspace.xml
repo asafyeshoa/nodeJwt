@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6ceb7953-dc46-47ca-b2ae-9bb8abbe9da7" name="Changes" comment="setPokemon">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/pokemons.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/pokemons.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1xFwQyCwkpjbudoCizcp9x74dBB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/model" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ceb7953-dc46-47ca-b2ae-9bb8abbe9da7" name="Changes" comment="" />
+      <created>1629964131632</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1629964131632</updated>
+      <workItem from="1629964132814" duration="3148000" />
+      <workItem from="1629989100313" duration="1233000" />
+      <workItem from="1630222602544" duration="107000" />
+      <workItem from="1630226708428" duration="614000" />
+      <workItem from="1630245030159" duration="639000" />
+      <workItem from="1630246556098" duration="635000" />
+      <workItem from="1630247942024" duration="1034000" />
+      <workItem from="1630312386614" duration="1035000" />
+      <workItem from="1630318148345" duration="1433000" />
+      <workItem from="1630391258090" duration="599000" />
+      <workItem from="1630410061586" duration="773000" />
+      <workItem from="1630477816196" duration="296000" />
+      <workItem from="1630480421756" duration="10000" />
+      <workItem from="1630569035919" duration="1043000" />
+      <workItem from="1630841200255" duration="63000" />
+      <workItem from="1632658177057" duration="28000" />
+      <workItem from="1632658226685" duration="1867000" />
+      <workItem from="1632728467682" duration="112000" />
+      <workItem from="1632831208292" duration="372000" />
+      <workItem from="1632835147369" duration="622000" />
+      <workItem from="1632836152201" duration="1220000" />
+      <workItem from="1633190011535" duration="292000" />
+      <workItem from="1633263861046" duration="41000" />
+      <workItem from="1633341993302" duration="4670000" />
+      <workItem from="1633423484526" duration="5317000" />
+      <workItem from="1633435342952" duration="665000" />
+      <workItem from="1633436622646" duration="28000" />
+      <workItem from="1633439729611" duration="1232000" />
+      <workItem from="1633502025728" duration="3027000" />
+      <workItem from="1633507051579" duration="2918000" />
+      <workItem from="1633513107692" duration="393000" />
+      <workItem from="1633769471870" duration="21000" />
+      <workItem from="1633776454071" duration="20000" />
+      <workItem from="1633946019593" duration="22000" />
+      <workItem from="1634033176573" duration="15000" />
+      <workItem from="1634034560209" duration="39000" />
+      <workItem from="1634034866370" duration="9000" />
+    </task>
+    <task id="LOCAL-00001" summary="first">
+      <created>1630245575640</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1630245575641</updated>
+    </task>
+    <task id="LOCAL-00002" summary="nada segoro">
+      <created>1630314867249</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1630314867249</updated>
+    </task>
+    <task id="LOCAL-00003" summary="getPlayersTable">
+      <created>1630319336601</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1630319336601</updated>
+    </task>
+    <task id="LOCAL-00004" summary="getPlayersTable">
+      <created>1633263875418</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1633263875418</updated>
+    </task>
+    <task id="LOCAL-00005" summary="getPlayersTable">
+      <created>1633348647521</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1633348647521</updated>
+    </task>
+    <task id="LOCAL-00006" summary="setPokemon">
+      <created>1633436638320</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1633436638320</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first" />
+    <MESSAGE value="nada segoro" />
+    <MESSAGE value="getPlayersTable" />
+    <MESSAGE value="setPokemon" />
+    <option name="LAST_COMMIT_MESSAGE" value="setPokemon" />
+  </component>
+</project>

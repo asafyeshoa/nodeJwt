@@ -1,10 +1,15 @@
 const mongoose = require("mongoose");
 
-const pokemonsSchema = new mongoose.Schema({
-    first_name: { type: String, default: null },
+const PokemonsSchema = new mongoose.Schema({
+    name: { type: String, default: null },
+    types: [Object],
+    srcImg: {type: String, default: null},
+    pokemonId: {type: String},
+    abilities: [Object],
+    stats: [Object]
 
 });
 
 
 
-module.exports = mongoose.model("pokemons", pokemonsSchema);
+module.exports = mongoose.model("pokemons", PokemonsSchema);

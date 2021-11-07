@@ -12,6 +12,7 @@ app.use(cors())
 app.use(express.json());
 // importing user context
 const User = require("./model/user");
+const Pokemon = require('./model/pokemons')
 const auth = require("./middleware/auth");
 
 app.post("/welcome", auth, (req, res) => {
@@ -133,6 +134,37 @@ app.post('/setPokemon', async (req, res) => {
     }
 
 })
+
+app.post("/testPokemons", async (req, res) => {
+
+
+ const data = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=151')
+    data.data.results.forEach(  (pokemonUrl) => {
+         axios.get(pokemonUrl.url).then(pokemon => {
+             // const pokemonObj = {}
+             // pokemonObj.name = pokemon.data.name
+             // pokemonObj.types = pokemon.data.types
+             // pokemonObj.srcImg = pokemon.data.sprites.front_default
+             // pokemonObj.id = pokemon.data.id
+             // pokemonObj.abilities = pokemon.data.abilities
+             // pokemonObj.stats = pokemon.data.stats
+
+             const pokemonDB =  Pokemon.create({
+                     name:  pokemon.data.name,
+                     types: pokemon.data.types,
+                     srcImg: pokemon.data.sprites.front_default,
+                     pokemonId: pokemon.data.id,
+                     abilities: pokemon.data.abilities,
+                     stats: pokemon.data.stats
+                 }).then(() => {
+                 console.log('works')
+             })
+
+         })
+    })
+
+})
+
 
 module.exports = app;
 
